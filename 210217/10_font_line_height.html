@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            width: 150px;
+            height: 70px;
+            border-radius: 30px;
+            background-color: cyan;
+        }
+
+        .font_center
+        {
+            text-align: center;
+        }
+
+        .button>a
+        {
+            display: block;
+            /* a는 인라인이라서 중앙 정렬이 안되고 block으로 바까야댐 */
+            line-height: 70px;
+            /* 수직 정렬 기능이 없어서 line-height 사용 */
+            text-decoration: none;
+            /* a태그에 밑줄이 없어짐 */
+        }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <a href=# class="font_center">
+            Click
+        </a>
+    </div>
+</body>
+</html>

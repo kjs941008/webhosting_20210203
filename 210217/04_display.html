@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            background-color: rgb(121, 62, 121);
+        }
+
+        div {
+            background-color: rgb(194, 194, 197);
+        }
+
+        p {
+            background-color: aqua;
+        }
+        #box{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border-color: red;
+        }
+        p:nth-of-type(2){
+            /* display: none; */
+            /* none 사라짐 */
+            visibility: hidden;
+            /* 뭔가 빈자리가 있어보이게함 (해당 공간 내용만 투명하게) */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        blcok 한줄 차지
+        inline 글자수 만큼 차지
+        inline-block inline 특성에 크기 조절가능
+     -->
+
+    <span>ㅈㄱㅊㅇ</span>
+    <div id="box">
+        <span>ㅁㄷㅊㅇ</span>
+    </div>
+    <div id="box2">
+        <span>ㅈㄱㅊㅇ ㅇㅇ</span>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, maiores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, voluptatibus?</p>
+</body>
+
+</html>
