@@ -6,17 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* 
+            position
+
+            static - 태그 순서로 위치잡음 left top 줘도 소용없음
+            relative - 초기 위치에서 상하 좌우로 이동
+
+            fixed - 0,0 에서 이동
+            absolute - 부모 태그가 스태틱이 아닐때 부모태그 0,0 기준으로 이동
+         */
         .box{
             border: 10px solid black;
             width: 100px;
             height: 100px;
         }
+        .red{
+            background-color: red;
+            position: static; /* 기본값 */
+            left: 50px;
+        }
+        .green{
+            background-color: springgreen;
+            position: relative; /* 기본값 */
+            left: 50px;
+        }
+        .blue{
+            background-color: blue;
+            position: fixed; /* 기본값 */
+            left: 500px;
+            top: 500px;
+        }
+        .pink{
+            background-color: pink;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+        }
+        
     </style>
 </head>
 <body>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box red">
+        <div class="box pink">1</div>
+    </div>
+    
+    <div class="box green"></div>
+    <div class="box blue"></div>
+
+    <div class="box green">
+        <div class="box pink">2</div>
+    </div>
+
 </body>
 </html>

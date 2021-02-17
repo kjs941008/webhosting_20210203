@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* 중앙정렬 공식 */
+            /* 너비를 지정하고 margin 값을 0 auto로 둔다 */
+
+            width: 960px;
+            margin:0 auto;
+        }
+        
+        #aside{
+            float: left;
+            width: 298px;
+            background-color: aqua;
+            border: 1px solid white;
+        }
+
+        #section{
+            float: left;
+            width: 658px;
+            background-color: hotpink;
+            border: 1px solid white;
+        }
+        #contents{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Header</h1>
+    </div>
+
+    <div id="navigation">
+        <h1>Navigation</h1>
+    </div>
+
+    <div id="contents">
+        <div id="aside">
+            <h1>aside</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, iste!</p>
+        </div>
+        <div id="section">
+            <h1>Section</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur doloribus nemo rerum impedit. Laboriosam, ullam praesentium. Optio nisi omnis ad!</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h1>Footer</h1>
+    </div>
+</body>
+</html>
