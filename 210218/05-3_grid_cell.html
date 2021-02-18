@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            /* 그리드를 가로 세로 200px씩 나눈거랑 같다 */
+            grid-template: 200px 200px 200px 200px/ 200px 200px 200px 200px;
+            gap: 5px;
+ 
+        }
+
+        [class*=cell] {
+            box-sizing: border-box;
+            border: 5px solid black;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .cell-a{
+            grid-row-start: 1;
+            grid-row-end: 5;
+            
+            grid-column-start: 1;
+            grid-column-end: 3;
+            /* background-image: url('img/dfgh.jpg'); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cell-a">cell</div>
+        <div class="cell">cell</div>
+        <div class="cell">cell</div>
+        <div class="cell">cell</div>
+        <div class="cell">cell</div>
+        <div class="cell">cell</div>
+        <div class="cell">cell</div>
+        <div class="cell">cell</div>
+        <div class="cell">cell</div>
+    </div>
+</body>
+
+</html>

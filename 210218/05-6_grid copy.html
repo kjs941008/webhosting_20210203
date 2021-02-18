@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 1900px;
+            margin: 0 auto;
+            padding-top: 10px;
+
+            display: grid;
+            grid-template: 70px 1fr 70px / 300px 1fr 1fr 300px;
+            gap: 5px;
+
+            grid-template-areas: 
+            'side1 header header side2'
+            'side1 aside content side2'
+            'side1 footer footer side2';
+        }
+        [class*=cell]{
+            box-sizing: border-box;
+            border: 5px solid black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .cell-header{grid-area: header;}
+        .cell-aside{grid-area: aside;}
+        .cell-content{grid-area: content;}
+        .cell-footer{grid-area: footer;}
+        .cell-side1{grid-area:side1;}
+        .cell-side2{grid-area:side2;}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cell-header"></div>
+        <div class="cell-aide"></div>
+        <div class="cell-content"></div>
+        <div class="cell-footer"></div>
+        <div class="cell-side1"></div>
+        <div class="cell-side2"></div>
+    </div>
+</body>
+</html>
