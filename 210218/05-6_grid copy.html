@@ -16,13 +16,13 @@
             padding-top: 10px;
 
             display: grid;
-            grid-template: 70px 1fr 70px / 300px 1fr 1fr 300px;
+            grid-template: 100px 100px 100px / 300px 300px 300px 300px;
             gap: 5px;
 
             grid-template-areas: 
-            'side1 header header side2'
-            'side1 aside content side2'
-            'side1 footer footer side2';
+            'header1 header1 header2 header2'
+            'content1 content2 content3 content4'
+            'footer1 footer2 footer3 footer4';
         }
         [class*=cell]{
             box-sizing: border-box;
@@ -30,24 +30,39 @@
             padding: 10px;
             border-radius: 10px;
         }
-        .cell-header{grid-area: header;}
-        .cell-aside{grid-area: aside;}
-        .cell-content{grid-area: content;}
-        .cell-footer{grid-area: footer;}
-        .cell-side1{grid-area:side1;}
-        .cell-side2{grid-area:side2;}
+        .cell-header1{grid-area: header1;}
+        .cell-header2{grid-area: header2;}
+
+        .cell-content1{grid-area: content1;}
+        .cell-content2{grid-area: content2;}
+        .cell-content3{grid-area: content3;}
+        .cell-content4{grid-area: content4;}
+
+        .cell-footer1{grid-area: footer1;}
+        .cell-footer2{grid-area: footer2;}
+        .cell-footer3{grid-area: footer3;}
+        .cell-footer4{grid-area: footer4;}
+
 
 
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="cell-header"></div>
-        <div class="cell-aide"></div>
-        <div class="cell-content"></div>
-        <div class="cell-footer"></div>
-        <div class="cell-side1"></div>
-        <div class="cell-side2"></div>
+        <div class="cell-header1"></div>
+        <div class="cell-header2"></div>
+
+        <div class="cell-content1"></div>
+        <div class="cell-content2"></div>
+        <div class="cell-content3"></div>
+        <div class="cell-content4"></div>
+
+        <div class="cell-footer1"></div>
+        <div class="cell-footer2"></div>
+        <div class="cell-footer3"></div>
+        <div class="cell-footer4"></div>
+
+
     </div>
 </body>
 </html>
