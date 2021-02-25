@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=checkbox]:checked+table{
+            display: table;
+        }
+
+        table{
+            text-align: center;
+            overflow:scroll;
+            width: 0px;
+            height: 0px;
+            /* 변환효과적용  */
+            -ms-transition-duration:1s;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            transition-duration:1s;
+            display: none;
+        }
+        .pink{
+            background-color: pink;
+        }
+        
+    </style>
+</head>
+<body>
+<input type="checkbox">스펙 비교 표
+    <table border="1">
+        <tr style="background-color: violet;">
+            <td></td>
+            <td>Galaxy 21</td>
+            <td>Galaxy 21+</td>
+            <td colspan="2">Galaxy 21 Ultra</td>
+        </tr>
+        <tr>
+            <td class="pink">디스 플레이</td>
+            <td>6.2"[158.4mm]</td>
+            <td>6.7"[169.5mm]</td>
+            <td colspan="2">6.8"[173.0mm]</td>
+        </tr>
+        <tr>
+            <td class="pink">디스 플레이 패널</td>
+            <td colspan="2">D - AMOLED 2X 플랫 디스플레이</td>
+            <td colspan="2">D - AMOLED 2X 엣지 디스플레이</td>
+        </tr>
+        <tr>
+            <td class="pink">디스 플레이 해상도</td>
+            <td colspan="2">FHD+ (2400x1080)</td>
+            <td colspan="2">WQHD+ (3200x1440)</td>
+        </tr>
+        <tr>
+            <td class="pink">주사율</td>
+            <td colspan="2">FHD+ 120Hz 가변주사율</td>
+            <td colspan="2">WQHD+ 120Hz 가변주사율</td>
+        </tr>
+        <tr>
+            <td class="pink">AP</td>
+            <td colspan="4">Exynos 2100</td>
+        </tr>
+        <tr>
+            <td class="pink">코어 개수</td>
+            <td colspan="4">옥타코어</td>
+        </tr>
+        <tr>
+            <td class="pink">CPU</td>
+            <td colspan="4">2.9 GHz, 2.8 GHz 2.2GHz</td>
+        </tr>
+        <tr>
+            <td class="pink">GPU</td>
+            <td colspan="4">Mali-G78</td>
+        </tr>
+        <tr>
+            <td class="pink">램</td>
+            <td colspan="2">8GB</td>
+            <td>12GB</td>
+            <td>16GB</td>
+        </tr>
+        <tr>
+            <td class="pink">내장 메모리</td>
+            <td colspan="2">256GB</td>
+            <td>256GB</td>
+            <td>512GB</td>
+        </tr>
+        <tr>
+            <td class="pink">외장 메모리</td>
+            <td colspan="4">X</td>
+        </tr>
+        <tr>
+            <td class="pink">통신 모드</td>
+            <td colspan="4"> 5G</td>
+        </tr>
+        <tr>
+            <td class="pink">WiFi</td>
+            <td colspan="2">Wi-Fi 6</td>
+            <td colspan="2">Wi-Fi 6E</td>
+        </tr>
+        <tr>
+            <td class="pink">블루투스</td>
+            <td colspan="2">5.0</td>
+            <td colspan="2">5.2</td>
+        </tr>
+        <tr>
+            <td class="pink">전면 카메라</td>
+            <td colspan="2">1,000만 화소 F2.2</td>
+            <td colspan="2">4,000만 화소 F2.2</td>
+        </tr>
+        <tr>
+            <td class="pink">메인 카메라</td>
+            <td colspan="2">광각 1,200만 화소 F1.8<br>망원 6,400만화소 F2.0<br>초광각 1,200만 화소 F2.2</td>
+            <td colspan="2">광각 10,800만 화소 F1.8<br>망원 1,000만 화소 F4.9<br>초광각 1,200만화소 F2.2<br>망원 1,000만 화소 F2.4<br>Laser AF 센서</td>
+        </tr>
+        <tr>
+            <td class="pink">동영상</td>
+            <td colspan="4">UHD 8k (7680 X 4320 @24fps</td>
+        </tr>
+        <tr>
+            <td class="pink">배터리 용량</td>
+            <td>4,000mAh</td>
+            <td>4,800mAh</td>
+            <td colspan="2">5,000mAh</td>
+        </tr>
+        <tr>
+            <td class="pink">충전 속도</td>
+            <td colspan="4">고속충전 25W<br>무선충전 15W</td>
+        </tr>
+        <tr>
+            <td class="pink">충전단자</td>
+            <td colspan="4">USB Type-c</td>
+        </tr>
+        <tr>
+            <td class="pink">가로x세로x두께(mm)</td>
+            <td>151.7 x 71.2 x 7.9</td>
+            <td>161.5 x 75.6 x 7.8</td>
+            <td colspan="2">165.1 x 75.6 x 8.9</td>
+        </tr>
+        <tr>
+            <td class="pink">무게 (g)</td>
+            <td>169</td>
+            <td>200</td>
+            <td colspan="2">277</td>
+        </tr>
+        <tr>
+            <td class="pink">가격</td>
+            <td>\999,000</td>
+            <td>\1,199,000</td>
+            <td>\1,452,000</td>
+            <td>\1,599,400</td>
+        </tr>
+</table>
+</body>
+</html>
